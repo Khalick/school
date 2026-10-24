@@ -1,0 +1,4 @@
+# Only the website itself is uploaded to Vercel.
+/*
+!site
+!vercel.json

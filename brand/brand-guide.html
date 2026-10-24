@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-KE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olive Crest Guide</title>
+<link rel="icon" href="svg/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Libre+Franklin:wght@400..800&amp;family=Atkinson+Hyperlegible+Next:ital,wght@0,400..800;1,400..800&amp;family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Kalam:wght@400;700&amp;display=swap">
+<style>
+  :root {
+    --green: #0F4235; --green-deep: #0A2E25; --gold: #E7B649; --gold-deep: #B9892B;
+    --cream: #F6F0E3; --cream-2: #EDE4D0; --line: #DCCFB2; --ink: #16211C; --ink-2: #3B4842; --olive: #55652A; --pen: #BF3426;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.6 "Atkinson Hyperlegible Next", system-ui, sans-serif; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 560; letter-spacing: -.015em; line-height: 1.05; margin: 0; color: var(--green-deep); }
+  h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+  h1 em, h2 em { font-style: italic; font-weight: 420; font-variation-settings: "SOFT" 100, "WONK" 1; }
+  h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); margin-bottom: 1rem; }
+  h3 { font-size: 1.25rem; margin-bottom: .35rem; }
+  p { margin: 0 0 1em; max-width: 64ch; }
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--line); }
+  header p { font-size: 1.2rem; color: var(--ink-2); margin-top: 1rem; }
+  .hand { font-family: Kalam, cursive; color: var(--pen); font-size: 1.3rem; }
+  section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+  .ba { display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: center; margin-top: 28px; }
+  .ba figure { margin: 0; background: var(--green); border-radius: 4px; padding: 28px; aspect-ratio: 1; display: grid; place-items: center; position: relative; }
+  .ba figure img { max-height: 100%; max-width: 100%; }
+  .ba figure { overflow: hidden; }
+  .ba figure.before { background: #004A3C; padding: 0; }
+  .ba figure.before img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+  .ba figcaption { position: absolute; left: 12px; top: 10px; font-family: Kalam, cursive; color: var(--gold); font-size: 1.1rem; }
+  .ba .arrow { font-family: Kalam, cursive; color: var(--pen); font-size: 2.2rem; }
+  .changes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; margin-top: 12px; list-style: none; padding: 0; }
+  .changes li { padding: 16px 0; border-top: 1px solid var(--line); }
+  .changes strong { display: block; font-family: Fraunces, serif; font-weight: 600; font-size: 1.1rem; color: var(--green-deep); }
+  .variants { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
+  .variant { border-radius: 4px; aspect-ratio: 4/5; display: grid; place-items: center; padding: 22px; position: relative; }
+  .variant img { max-width: 100%; max-height: 100%; }
+  .variant span { position: absolute; left: 10px; bottom: 8px; font-size: .78rem; font-weight: 700; opacity: .75; }
+  .lockups { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+  .lockups div { border-radius: 4px; padding: 28px; }
+  .lockups img { width: 100%; }
+  .swatches { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-top: 20px; }
+  .sw { border-radius: 4px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+  .sw i { display: block; height: 96px; }
+  .sw div { padding: 10px 12px; font-size: .86rem; }
+  .sw b { display: block; font-size: .95rem; }
+  .type { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 20px; }
+  .type div { border-top: 2px solid var(--green); padding-top: 14px; }
+  .sample-display { font-family: Fraunces, serif; font-size: 3rem; line-height: 1; color: var(--green-deep); }
+  .sample-body { font-size: 1.6rem; line-height: 1.2; }
+  .sample-hand { font-family: Kalam, cursive; font-size: 2rem; color: var(--pen); line-height: 1.1; }
+  .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 12px; }
+  .rules ul { padding-left: 1.1rem; margin: 0; }
+  .rules li { margin-bottom: .55rem; }
+  .files { font-family: ui-monospace, Consolas, monospace; font-size: .9rem; background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 18px 20px; overflow-x: auto; white-space: pre; line-height: 1.7; }
+  footer { padding: 40px 0 64px; color: var(--ink-2); font-size: .9rem; }
+  @media (max-width: 820px) {
+    .ba { grid-template-columns: 1fr; } .ba .arrow { text-align: center; transform: rotate(90deg); }
+    .changes, .rules, .lockups, .type { grid-template-columns: 1fr; }
+    .variants { grid-template-columns: 1fr 1fr; }
+    .swatches { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="hand" style="margin:0 0 .6rem">Olive International Schools · Nairobi</p>
+    <h1>The Olive crest, <em>redrawn.</em></h1>
+    <p>The same crest families already recognise, with every element redrawn so it looks deliberate, reads clearly at any size, and finally says something about the name <em>Olive</em>.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Before and after</h2>
+    <div class="ba">
+      <figure class="before"><figcaption>before</figcaption><img src="../WhatsApp%20Image%202026-10-23%20at%2019.41.46.jpeg" alt="The original Olive School crest, with the phone number underneath."></figure>
+      <div class="arrow" aria-hidden="true">→</div>
+      <figure><figcaption>after</figcaption><img src="svg/olive-crest-primary.svg" alt="The redrawn Olive Schools crest."></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What changed, and why</h2>
+    <ul class="changes">
+      <li><strong>Kept: every symbol</strong>Crown, quartered shield, quill, open book, graduation cap, atom, ribbon, and the green and gold. Nothing families know was taken away.</li>
+      <li><strong>Added: the olive branches</strong>The old crest never referred to the school's name. Two olive sprigs now frame the shield, an old symbol of wisdom, peace and patient growth.</li>
+      <li><strong>Redrawn icons with one hand</strong>The four quarter icons were generic clip-art in four different styles. They are now drawn with matching line weights, so they look like one family.</li>
+      <li><strong>A hidden detail</strong>The nucleus of the atom is an olive. You don't notice it until someone points it out, and then you can't stop seeing it.</li>
+      <li><strong>Proper heraldic structure</strong>The shield has a gold border with an inner keyline, the cross meets that keyline cleanly, and the crown sits on a band that follows the curve of the shield.</li>
+      <li><strong>A real ribbon</strong>The banner now folds behind itself into swallowtails with a shaded underside, and the lettering follows the curve precisely.</li>
+      <li><strong>Custom-set lettering</strong>"OLIVE SCHOOLS" is set in Fraunces, a warm old-style serif, with each letter placed on the curve and converted to outlines, so it looks the same on every device.</li>
+      <li><strong>No phone number in the logo</strong>Contact details date quickly and make a crest look like an advert. The number lives on the website, letterheads and posters instead.</li>
+      <li><strong>Deeper, richer colours</strong>The lemon yellow became a warmer gold (#E7B649) and the green became a deeper school green (#0F4235). Both are still recognisably Olive.</li>
+      <li><strong>Built for every size</strong>Full-colour, cream-background and one-colour versions, a horizontal lockup, and a simplified favicon that stays legible at 16 pixels.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Versions</h2>
+    <p>Use the <b>primary</b> crest on green, the <b>light</b> crest on cream or white, and the one-colour versions for embroidery, rubber stamps, engraving and photocopies.</p>
+    <div class="variants">
+      <div class="variant" style="background:var(--green)"><img src="svg/olive-crest-primary.svg" alt="Primary crest"><span style="color:var(--gold)">primary · on green</span></div>
+      <div class="variant" style="background:var(--cream-2)"><img src="svg/olive-crest-light.svg" alt="Light crest"><span>light · on cream / white</span></div>
+      <div class="variant" style="background:#fff;border:1px solid var(--line)"><img src="svg/olive-crest-mono-green.svg" alt="One-colour green crest"><span>one colour · green</span></div>
+      <div class="variant" style="background:var(--green-deep)"><img src="svg/olive-crest-mono-white.svg" alt="One-colour white crest"><span style="color:#fff">one colour · white</span></div>
+    </div>
+    <h3 style="margin-top:36px">Horizontal lockups</h3>
+    <p>For letterheads, email signatures, signboards and the website header.</p>
+    <div class="lockups">
+      <div style="background:var(--cream-2)"><img src="svg/olive-lockup-light.svg" alt="Horizontal lockup for light backgrounds"></div>
+      <div style="background:var(--green)"><img src="svg/olive-lockup-dark.svg" alt="Horizontal lockup for dark backgrounds"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Colours</h2>
+    <div class="swatches">
+      <div class="sw"><i style="background:#0F4235"></i><div><b>School green</b>#0F4235</div></div>
+      <div class="sw"><i style="background:#0A2E25"></i><div><b>Deep green</b>#0A2E25</div></div>
+      <div class="sw"><i style="background:#E7B649"></i><div><b>Crest gold</b>#E7B649</div></div>
+      <div class="sw"><i style="background:#F6F2EA"></i><div><b>Ivory</b>#F6F2EA · page background</div></div>
+      <div class="sw"><i style="background:#ECE6DA"></i><div><b>Stone</b>#ECE6DA · alternate sections</div></div>
+      <div class="sw"><i style="background:#15201B"></i><div><b>Ink</b>#15201B · body text</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Typefaces</h2>
+    <p>All are free Google Fonts, so anyone making a poster in Canva or Word can use the same type.</p>
+    <div class="type">
+      <div><p class="sample-display" style="font-family:'Libre Caslon Display',serif;font-weight:400">Libre Caslon</p><p>Headlines, titles and the school name. Set it upright and regular; never bold or italic. Caslon has been the face of British printing for nearly 300 years.</p></div>
+      <div><p class="sample-body" style="font-family:'Libre Franklin',sans-serif;font-size:1.9rem;color:var(--green-deep)">Libre Franklin</p><p>Body text, and small labels and buttons in spaced capitals (SemiBold, 0.14–0.18em letter-spacing).</p></div>
+      <div><p class="sample-display">Fraunces</p><p>Only the lettering on the crest ribbon. Don't use it for anything else.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Using the crest</h2>
+    <div class="rules">
+      <div>
+        <h3>Do</h3>
+        <ul>
+          <li>Leave clear space around the crest at least the height of the crown.</li>
+          <li>Use the full crest at 120&nbsp;px wide or larger; below that, use the shield-only mark or favicon.</li>
+          <li>Use the SVG files wherever you can: they stay sharp at any size.</li>
+          <li>Use the one-colour versions for embroidery on uniforms and for rubber stamps.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Don't</h3>
+        <ul>
+          <li>Add phone numbers, slogans or effects (shadows, glows, outlines) to the crest.</li>
+          <li>Stretch, rotate or recolour it outside the versions above.</li>
+          <li>Put the gold crest on cream or white; use the light version there.</li>
+          <li>Redraw or retype the ribbon text. Ask for a new version instead.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Files</h2>
+    <div class="files">svg/olive-crest-primary.svg        full colour, for green backgrounds
+svg/olive-crest-light.svg          full colour, for cream / white backgrounds
+svg/olive-crest-mono-green.svg     one colour (green), transparent
+svg/olive-crest-mono-white.svg     one colour (white), transparent
+svg/olive-lockup-light.svg         crest + name, light backgrounds
+svg/olive-lockup-dark.svg          crest + name, dark backgrounds
+svg/olive-shield.svg               shield only, for small spaces
+svg/favicon.svg                    browser-tab icon
+png/olive-social-profile-1080.png  profile picture for Instagram, TikTok, Facebook, WhatsApp
+png/og-image-1200x630.png          link preview when the website is shared
+png/*.png                          high-resolution PNG copies of everything above</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Olive International Schools, Nairobi · Your future. Our commitment.</div>
+</footer>
+</body>
+</html>

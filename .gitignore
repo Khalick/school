@@ -1,0 +1,18 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+
+# Vercel CLI
+.vercel
+
+# Reference images dropped into this folder that are other people's photos.
+# They are not used on the site and should not be published in the repository.
+/Florida Virtual School*.jpg
+/June was mostly eventful*
+/Là où certains posent*
+/bruh*.jpg
+/busy lecture here*
+/download (*).jpg
