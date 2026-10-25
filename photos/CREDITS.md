@@ -14,14 +14,16 @@ Before the site goes live, replace each one with the school's own photo of a sim
 | slide-study.jpg | Home banner slideshow, photo 3 | A small group studying together | https://www.pexels.com/photo/8199634/ |
 | about-group.jpg | About page banner | Students together in the library | https://www.pexels.com/photo/8199599/ |
 | admissions-student.jpg | Admissions page banner | A confident student, looking at the camera | https://www.pexels.com/photo/6684514/ |
-| kcse-card.jpg | KCSE card (home) | Students in the library | https://www.pexels.com/photo/6684602/ |
+| kcse-card.jpg | Not used at the moment (was the KCSE card on the home page) | Students in the library | https://www.pexels.com/photo/6684602/ |
 | kcse-banner.jpg | KCSE page banner | Students studying together | https://www.pexels.com/photo/6281829/ |
-| igcse-room.jpg | IGCSE card (home) and IGCSE section (Learning) | Younger students working | https://www.pexels.com/photo/9159076/ |
+| igcse-room.jpg | IGCSE section (Learning) | Younger students working | https://www.pexels.com/photo/9159076/ |
 | lesson.jpg | Home "The structure of a school, at home" | A teacher with a small class | https://www.pexels.com/photo/5905530/ |
-| homeschool.jpg | Homeschool card and section | A student studying at home | https://www.pexels.com/photo/4144100/ |
+| homeschool.jpg | Homeschooling card (home) and Learning homeschool section | A student studying at home | https://www.pexels.com/photo/4144100/ |
 | teachers.jpg | Learning page banner | A teacher with students | https://www.pexels.com/photo/5905551/ |
 | science.jpg | About "How we teach" | A science practical | https://www.pexels.com/photo/3825456/ |
-| graduate.jpg | A Level card (home) and A Level section (Learning) | An older student, or a results day or graduation photo | https://www.pexels.com/photo/12497062/ |
+| graduate.jpg | A Level section (Learning) | An older student, or a results day or graduation photo | https://www.pexels.com/photo/12497062/ |
+| tutoring.jpg | Private tutoring card (home) | A teacher working one to one with a student | https://www.pexels.com/photo/4173338/ |
+| online.jpg | Online study card (home) | A student studying online at home | https://www.pexels.com/photo/6345308/ |
 
 Pexels photos are free to use under the Pexels License (https://www.pexels.com/license/). No attribution is required, but the sources are listed here.
 

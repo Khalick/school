@@ -28,7 +28,7 @@
   "mainEntity": [
     { "@type": "Question", "name": "Can homeschooled students sit Cambridge exams in Kenya?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Homeschooled students usually sit Cambridge exams as private candidates at an approved exam centre, such as the British Council. Olive guides families through entries, deadlines and choosing a centre." } },
     { "@type": "Question", "name": "Who is Olive for?", "acceptedAnswer": { "@type": "Answer", "text": "Students preparing for Cambridge IGCSE (usually ages 14 to 16) and Cambridge International AS & A Level (usually ages 16 to 19), in families who homeschool or need more flexibility than a traditional timetable allows." } },
-    { "@type": "Question", "name": "How much are the fees?", "acceptedAnswer": { "@type": "Answer", "text": "Olive keeps its fees affordable. Message the school on WhatsApp on +254 796 042 535 for the current fee guide." } }
+    { "@type": "Question", "name": "How much are the fees?", "acceptedAnswer": { "@type": "Answer", "text": "Fees are charged per term and depend on the level and study option (homeschooling, private tutoring or online study). For example, Cambridge IGCSE homeschooling is KSh 100,000 per term. There is a one-time admission fee of KSh 3,000." } }
   ]
 }
 </script>
@@ -106,7 +106,7 @@
       <span class="wordmark"><b>Olive International Schools</b><small>Nairobi · Kenya</small></span>
     </a>
     <div class="header-actions">
-      <a class="btn btn--sm" href="/admissions#enquire">Enquire</a>
+      <a class="btn btn--sm" href="/apply">Apply</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span class="bars" aria-hidden="true"></span></button>
     </div>
     <nav class="nav" id="site-nav" aria-label="Main">
@@ -118,7 +118,7 @@
         <li><a href="/admissions" aria-current="page">Admissions</a></li>
         <li><a href="/admissions#contact">Contact</a></li>
       </ul>
-      <a class="btn btn--sm" href="/admissions#enquire">Enquire now</a>
+      <a class="btn btn--sm" href="/apply">Apply now</a>
       <div class="nav-contact">
         <a href="tel:+254796042535">+254 796 042 535</a>
         <a href="mailto:oliveschool946@gmail.com">oliveschool946@gmail.com</a>
@@ -135,8 +135,8 @@
       <div class="opener-foot">
         <p class="lede">Four simple steps, from your first message to your child's first lesson. It starts with a conversation, not a long form.</p>
         <div class="actions">
-          <a class="btn" href="#enquire">Make an enquiry</a>
-          <a class="btn btn--line" href="https://wa.me/254796042535" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp us</a>
+          <a class="btn btn--gold" href="/apply">Apply online</a>
+          <a class="btn btn--line" href="#enquire">Ask a question</a>
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@
         <p data-reveal>Here is what happens after you get in touch with us.</p>
       </div>
       <ol class="steps">
-        <li data-reveal><h3>Enquire</h3><p>Call, send a WhatsApp message or use the form below. Tell us your child's age and current level.</p></li>
+        <li data-reveal><h3>Apply online</h3><p>Fill in the <a href="/apply">short application form</a>. It takes about five minutes. Prefer to talk first? Call or WhatsApp us.</p></li>
         <li data-reveal><h3>Meet us</h3><p>We talk through your child's learning so far, their goals and how Olive works.</p></li>
         <li data-reveal><h3>Agree a plan</h3><p>We recommend a programme, subjects and an exam series, and share the fee guide.</p></li>
         <li data-reveal><h3>Start learning</h3><p>Your child meets their teachers and begins their study plan.</p></li>
@@ -165,10 +165,10 @@
   <!-- Enquiry -->
   <section class="section bg-stone" id="enquire">
     <div class="wrap enquire">
-      <form class="form" id="enquiry-form" novalidate data-reveal>
-        <span class="label">Step one</span>
-        <h2>Make an enquiry</h2>
-        <p>Complete the form and press send. WhatsApp opens with your message written out, ready for you to check and send. Nothing is stored on this website.</p>
+      <form class="form apply-card form--quiet" id="enquiry-form" novalidate data-reveal>
+        <span class="label">Not ready to apply?</span>
+        <h2>Have a question first?</h2>
+        <p>Send us a quick message. WhatsApp opens with it written out, ready for you to check and send. Nothing is stored on this website. Ready now? <a href="/apply">Apply online</a>.</p>
         <div class="field-row">
           <div class="field"><label for="f-parent">Your name</label><input id="f-parent" name="parent" type="text" autocomplete="name" required></div>
           <div class="field"><label for="f-phone">Phone <span class="optional">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
@@ -181,6 +181,7 @@
           <legend>Programme</legend>
           <div class="choices">
             <label class="choice"><input type="radio" name="level" value="Cambridge IGCSE" required><span>IGCSE</span></label>
+            <label class="choice"><input type="radio" name="level" value="Pearson Edexcel"><span>Pearson Edexcel</span></label>
             <label class="choice"><input type="radio" name="level" value="Cambridge AS &amp; A Level"><span>AS &amp; A Level</span></label>
             <label class="choice"><input type="radio" name="level" value="KCSE private candidate"><span>KCSE private candidate</span></label>
             <label class="choice"><input type="radio" name="level" value="Not sure yet"><span>Not sure yet</span></label>
@@ -209,17 +210,93 @@
 
   <!-- Fees -->
   <section class="section" id="fees">
-    <div class="wrap side">
-      <div data-reveal>
-        <h2>Fees</h2>
+    <div class="wrap">
+      <div class="head">
+        <div data-reveal>
+          <span class="label">Fees</span>
+          <h2>Fees per term</h2>
+        </div>
+        <p data-reveal>Fees depend on the level and on how your child studies: homeschooling with our teachers, one-to-one private tutoring, or online study.</p>
       </div>
-      <div data-reveal>
-        <p class="statement" style="margin-bottom:24px">Our fees are kept affordable on purpose, so that a Cambridge education is within reach of more families.</p>
-        <p class="muted">Ask for the current fee guide for your child's programme and we will send it to you on WhatsApp or by email, with no obligation.</p>
-        <div class="actions" style="margin-top:32px">
-          <a class="btn" href="https://wa.me/254796042535?text=Hello%20Olive%20International%20Schools%2C%20please%20send%20me%20your%20current%20fee%20guide." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Request the fee guide</a>
+
+      <div class="rate-switch" role="group" aria-label="Show the fees for" hidden>
+        <button type="button" data-mode="homeschooling" aria-pressed="true">Homeschooling</button>
+        <button type="button" data-mode="tutoring" aria-pressed="false">Private tutoring</button>
+        <button type="button" data-mode="online" aria-pressed="false">Online study</button>
+      </div>
+
+      <div class="rates" data-reveal>
+        <article class="rate-card">
+          <header>
+            <h3>Primary</h3>
+            <p class="meta">Years 1 to 6<br>Cambridge Primary</p>
+          </header>
+          <dl>
+            <div data-mode="homeschooling"><dt>Homeschooling</dt><dd><b>KSh 60,000</b> per term</dd></div>
+            <div data-mode="tutoring"><dt>Private tutoring</dt><dd><b>KSh 70,000</b> per term</dd></div>
+            <div data-mode="online"><dt>Online study</dt><dd><b>KSh 17,000</b> per term</dd></div>
+          </dl>
+        </article>
+        <article class="rate-card">
+          <header>
+            <h3>Lower Secondary</h3>
+            <p class="meta">Years 7 to 9<br>Cambridge Lower Secondary</p>
+          </header>
+          <dl>
+            <div data-mode="homeschooling"><dt>Homeschooling</dt><dd><b>KSh 80,000</b> per term</dd></div>
+            <div data-mode="tutoring"><dt>Private tutoring</dt><dd><b>KSh 110,000</b> per term</dd></div>
+            <div data-mode="online"><dt>Online study</dt><dd><b>KSh 30,000</b> per term</dd></div>
+          </dl>
+        </article>
+        <article class="rate-card">
+          <header>
+            <h3>IGCSE</h3>
+            <p class="meta">Years 10 to 11<br>Cambridge IGCSE</p>
+          </header>
+          <dl>
+            <div data-mode="homeschooling"><dt>Homeschooling</dt><dd><b>KSh 100,000</b> per term</dd></div>
+            <div data-mode="tutoring"><dt>Private tutoring</dt><dd><b>KSh 150,000</b> per term</dd></div>
+            <div data-mode="online"><dt>Online study</dt><dd><b>KSh 60,000</b> per term</dd></div>
+          </dl>
+        </article>
+        <article class="rate-card">
+          <header>
+            <h3>AS &amp; A Level</h3>
+            <p class="meta">Years 12 to 13<br>Cambridge AS &amp; A Level</p>
+          </header>
+          <dl>
+            <div data-mode="homeschooling"><dt>Homeschooling</dt><dd><b>KSh 150,000</b> per term</dd></div>
+            <div data-mode="tutoring"><dt>Private tutoring</dt><dd><b>KSh 200,000</b> per term</dd></div>
+            <div data-mode="online"><dt>Online study</dt><dd><b>KSh 90,000</b> per term</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="fee-info">
+        <div data-reveal>
+          <h3>Admission fee</h3>
+          <p class="fee-big">KSh 3,000</p>
+          <p class="small">One-time and non-refundable, payable on registration.</p>
+        </div>
+        <div data-reveal>
+          <h3>Requirements</h3>
+          <ul class="list-ruled">
+            <li>3 passport photos</li>
+            <li>A copy of the birth certificate or passport</li>
+            <li>Previous school report, if applicable</li>
+          </ul>
+        </div>
+        <div data-reveal>
+          <h3>How to pay</h3>
+          <dl class="pay">
+            <div><dt>Method</dt><dd>Lipa na M-Pesa</dd></div>
+            <div><dt>Paybill number</dt><dd><b>522533</b></dd></div>
+            <div><dt>Account number</dt><dd><b>7979746</b></dd></div>
+          </dl>
+          <p class="small">Payments are due before the 5th of every month.</p>
         </div>
       </div>
+      <p class="small fee-note">For Pearson Edexcel fees or any payment question, <a href="https://wa.me/254796042535?text=Hello%20Olive%20International%20Schools%2C%20I%20have%20a%20question%20about%20fees." target="_blank" rel="noopener">ask us on WhatsApp</a>.</p>
     </div>
   </section>
 
@@ -253,7 +330,7 @@
         </details>
         <details>
           <summary>How much are the fees?</summary>
-          <div class="answer"><p>Our fees are kept affordable. <a href="#fees">Request the current fee guide</a> and we will send it to you.</p></div>
+          <div class="answer"><p>Fees are charged per term and depend on the level and the study option. For example, IGCSE homeschooling is KSh 100,000 per term. There is also a one-time admission fee of KSh 3,000. <a href="#fees">See all fees</a>.</p></div>
         </details>
         <details>
           <summary>My child has been in the Kenyan curriculum. Can they move to Cambridge?</summary>
@@ -308,8 +385,9 @@
     <div>
       <h2>Admissions</h2>
       <ul>
+        <li><a href="/apply">Apply online</a></li>
         <li><a href="/admissions">How to join</a></li>
-        <li><a href="/admissions#enquire">Make an enquiry</a></li>
+        <li><a href="/admissions#enquire">Ask a question</a></li>
         <li><a href="/admissions#fees">Fees</a></li>
         <li><a href="/admissions#faq">Questions from parents</a></li>
       </ul>
@@ -336,10 +414,14 @@
     </div>
   </div>
 </footer>
+<a class="wa-fab" href="https://wa.me/254796042535?text=Hello%20Olive%20International%20Schools%2C%20I%20would%20like%20to%20find%20out%20more." target="_blank" rel="noopener" aria-label="Chat with Olive International Schools on WhatsApp">
+  <span class="wa-fab-label" aria-hidden="true">Chat with us</span>
+  <span class="wa-fab-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#fff" d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L2.9 21.1l4.6-1.2A9.2 9.2 0 1 0 12 2.8Z"/><path fill="#1FAF54" d="M8.7 7.3c.3-.5.6-.5.9-.5h.6c.2 0 .5.1.6.4l.8 1.9c.1.2.1.5-.1.7l-.6.7c-.2.2-.2.5 0 .7.5.9 1.2 1.6 2 2.2.3.2.6.2.8 0l.6-.7c.2-.2.5-.3.7-.2l1.9.9c.3.1.4.4.4.6 0 .6-.2 1.3-.6 1.7-.6.6-1.6.9-2.6.6-1.6-.5-3-1.4-4.2-2.6-1.1-1.1-2-2.5-2.4-4-.3-.9-.1-1.9.4-2.4Z"/></svg></span>
+</a>
 <nav class="mobile-bar" aria-label="Quick contact">
   <a href="tel:+254796042535"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
   <a href="https://wa.me/254796042535" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
-  <a class="mobile-bar-main" href="/admissions#enquire">Enquire</a>
+  <a class="mobile-bar-main" href="/apply">Apply</a>
 </nav>
 <script src="/assets/js/site.js" defer></script>
 </body>

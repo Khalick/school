@@ -72,6 +72,8 @@
     <ellipse fill="currentColor" cx="41.5" cy="5.5" rx="5.5" ry="2.4" transform="rotate(-40 41.5 5.5)"/>
     <ellipse fill="currentColor" cx="30" cy="27" rx="3.2" ry="4.2" transform="rotate(-20 30 27)"/>
   </symbol>
+  <!-- Edexcel emblem -->
+  <symbol id="e-seal" viewBox="0 0 48 48"><path fill="currentColor" d="M17.6 27.5 13.4 42.4l3.9-2.1 2.6 3.6 3.4-13.3zM30.4 27.5l4.2 14.9-3.9-2.1-2.6 3.6-3.4-13.3z"/><path fill="currentColor" d="M24 6.8L25.51 8.5L27.42 7.25L28.44 9.28L30.6 8.57L31.06 10.8L33.33 10.67L33.2 12.94L35.43 13.4L34.72 15.56L36.75 16.58L35.5 18.49L37.2 20L35.5 21.51L36.75 23.42L34.72 24.44L35.43 26.6L33.2 27.06L33.33 29.33L31.06 29.2L30.6 31.43L28.44 30.72L27.42 32.75L25.51 31.5L24 33.2L22.49 31.5L20.58 32.75L19.56 30.72L17.4 31.43L16.94 29.2L14.67 29.33L14.8 27.06L12.57 26.6L13.28 24.44L11.25 23.42L12.5 21.51L10.8 20L12.5 18.49L11.25 16.58L13.28 15.56L12.57 13.4L14.8 12.94L14.67 10.67L16.94 10.8L17.4 8.57L19.56 9.28L20.58 7.25L22.49 8.5Z"/><circle cx="24" cy="20" r="8" fill="none" style="stroke:var(--cut,#fff)" stroke-width="1.3"/><path style="fill:var(--cut,#fff)" d="M24 16.1L25.06 18.94L28.09 19.07L25.71 20.96L26.53 23.88L24 22.2L21.47 23.88L22.29 20.96L19.91 19.07L22.94 18.94Z"/></symbol>
   <!-- interface icons -->
   <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24">
@@ -95,7 +97,7 @@
       <span class="wordmark"><b>Olive International Schools</b><small>Nairobi · Kenya</small></span>
     </a>
     <div class="header-actions">
-      <a class="btn btn--sm" href="/admissions#enquire">Enquire</a>
+      <a class="btn btn--sm" href="/apply">Apply</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span class="bars" aria-hidden="true"></span></button>
     </div>
     <nav class="nav" id="site-nav" aria-label="Main">
@@ -107,7 +109,7 @@
         <li><a href="/admissions">Admissions</a></li>
         <li><a href="/admissions#contact">Contact</a></li>
       </ul>
-      <a class="btn btn--sm" href="/admissions#enquire">Enquire now</a>
+      <a class="btn btn--sm" href="/apply">Apply now</a>
       <div class="nav-contact">
         <a href="tel:+254796042535">+254 796 042 535</a>
         <a href="mailto:oliveschool946@gmail.com">oliveschool946@gmail.com</a>
@@ -124,7 +126,7 @@
       <div class="opener-foot">
         <p class="lede">Two internationally recognised programmes and a flexible way of learning at home, with experienced teachers and a plan for every learner.</p>
         <div class="actions">
-          <a class="btn" href="/admissions#enquire">Enquire now</a>
+          <a class="btn" href="/apply">Apply now</a>
           <a class="btn btn--line" href="#exams">Exam dates</a>
         </div>
       </div>
@@ -137,9 +139,9 @@
     <div class="wrap">
       <div class="head">
         <div data-reveal>
-          <h2>Two programmes, one clear path</h2>
+          <h2>Internationally recognised programmes</h2>
         </div>
-        <p data-reveal>Both are set and examined by Cambridge International Education, part of the University of Cambridge. Sitting the Kenyan national exam instead? See <a href="/kcse">KCSE private candidates</a>.</p>
+        <p data-reveal>Cambridge IGCSE and AS &amp; A Level are set by Cambridge International Education, part of the University of Cambridge. We also prepare students for Pearson Edexcel qualifications. Sitting the Kenyan national exam instead? See <a href="/kcse">KCSE private candidates</a>.</p>
       </div>
       <div class="compare">
         <article id="igcse" data-reveal>
@@ -167,6 +169,23 @@
           </dl>
         </article>
       </div>
+
+      <article class="board" id="edexcel" data-reveal>
+        <div class="board-head">
+          <span class="qual-badge" aria-hidden="true"><svg><use href="#e-seal"/></svg></span>
+          <h2>Pearson Edexcel</h2>
+          <p class="meta">International GCSE and International AS &amp; A Level</p>
+        </div>
+        <div class="board-body">
+          <p>Pearson Edexcel qualifications come from Pearson, a UK awarding organisation, and are recognised by universities and employers around the world. Students follow the International GCSE and then the International AS &amp; A Level, with the same teaching, study plans and exam guidance as our Cambridge students.</p>
+          <dl class="facts">
+            <div><dt>Grading</dt><dd>International GCSE: 9 to 1. International A Level: A* to E</dd></div>
+            <div><dt>Exams</dt><dd>Several sittings a year, including January and May to June</dd></div>
+            <div><dt>Structure</dt><dd>International A Levels are taken in units, which can be sat in different exam sessions</dd></div>
+            <div><dt>Leads to</dt><dd>University in Kenya and around the world</dd></div>
+          </dl>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -188,7 +207,7 @@
           <li><strong>Past papers and exam technique</strong> from the start</li>
           <li><strong>Guidance on exam entry</strong>, private-candidate registration and exam centres</li>
         </ul>
-        <a class="btn" href="/admissions#enquire">Ask about homeschool support</a>
+        <a class="btn" href="/apply">Apply now</a>
       </div>
     </div>
   </section>
@@ -247,13 +266,13 @@
         <p class="small">Cambridge publishes exact timetables each year. We will confirm the dates for your child's series.</p>
       </div>
       <ul class="dates" data-reveal>
-        <li class="is-now"><span class="when">Oct – Nov 2026</span><div><strong>November 2026 exam series</strong><span>In progress now</span></div></li>
-        <li><span class="when">January 2027</span><div><strong>November 2026 results</strong><span>Released by Cambridge</span></div></li>
-        <li><span class="when">Early 2027</span><div><strong>Entries for the June 2027 series</strong><span>Deadlines are set by each exam centre</span></div></li>
-        <li><span class="when">Apr – Jun 2027</span><div><strong>June 2027 exam series</strong><span>The main series of the year, and the usual choice for university applications</span></div></li>
-        <li><span class="when">August 2027</span><div><strong>June 2027 results</strong><span>Released by Cambridge</span></div></li>
-        <li><span class="when">Oct – Nov 2027</span><div><strong>November 2027 exam series</strong><span>Useful for resits, or for students ready at a different time</span></div></li>
-        <li><span class="when">January 2028</span><div><strong>November 2027 results</strong><span>Released by Cambridge</span></div></li>
+        <li class="is-now" data-from="2026-10" data-until="2026-11"><span class="when">Oct – Nov 2026</span><div><strong>November 2026 exam series</strong><span>Written exams for IGCSE, AS and A Level</span></div></li>
+        <li data-from="2027-01" data-until="2027-01"><span class="when">January 2027</span><div><strong>November 2026 results</strong><span>Released by Cambridge</span></div></li>
+        <li data-from="2027-01" data-until="2027-03"><span class="when">Early 2027</span><div><strong>Entries for the June 2027 series</strong><span>Deadlines are set by each exam centre</span></div></li>
+        <li data-from="2027-04" data-until="2027-06"><span class="when">Apr – Jun 2027</span><div><strong>June 2027 exam series</strong><span>The main series of the year, and the usual choice for university applications</span></div></li>
+        <li data-from="2027-08" data-until="2027-08"><span class="when">August 2027</span><div><strong>June 2027 results</strong><span>Released by Cambridge</span></div></li>
+        <li data-from="2027-10" data-until="2027-11"><span class="when">Oct – Nov 2027</span><div><strong>November 2027 exam series</strong><span>Useful for resits, or for students ready at a different time</span></div></li>
+        <li data-from="2028-01" data-until="2028-01"><span class="when">January 2028</span><div><strong>November 2027 results</strong><span>Released by Cambridge</span></div></li>
       </ul>
     </div>
   </section>
@@ -265,7 +284,7 @@
         <p>Tell us their age and subjects so far, and we will suggest a programme and a realistic exam series.</p>
       </div>
       <div class="actions" data-reveal>
-        <a class="btn btn--gold" href="/admissions#enquire">Enquire now</a>
+        <a class="btn btn--gold" href="/apply">Apply now</a>
         <a class="btn btn--line-light" href="https://wa.me/254796042535" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp us</a>
       </div>
     </div>
@@ -299,8 +318,9 @@
     <div>
       <h2>Admissions</h2>
       <ul>
+        <li><a href="/apply">Apply online</a></li>
         <li><a href="/admissions">How to join</a></li>
-        <li><a href="/admissions#enquire">Make an enquiry</a></li>
+        <li><a href="/admissions#enquire">Ask a question</a></li>
         <li><a href="/admissions#fees">Fees</a></li>
         <li><a href="/admissions#faq">Questions from parents</a></li>
       </ul>
@@ -327,10 +347,14 @@
     </div>
   </div>
 </footer>
+<a class="wa-fab" href="https://wa.me/254796042535?text=Hello%20Olive%20International%20Schools%2C%20I%20would%20like%20to%20find%20out%20more." target="_blank" rel="noopener" aria-label="Chat with Olive International Schools on WhatsApp">
+  <span class="wa-fab-label" aria-hidden="true">Chat with us</span>
+  <span class="wa-fab-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#fff" d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L2.9 21.1l4.6-1.2A9.2 9.2 0 1 0 12 2.8Z"/><path fill="#1FAF54" d="M8.7 7.3c.3-.5.6-.5.9-.5h.6c.2 0 .5.1.6.4l.8 1.9c.1.2.1.5-.1.7l-.6.7c-.2.2-.2.5 0 .7.5.9 1.2 1.6 2 2.2.3.2.6.2.8 0l.6-.7c.2-.2.5-.3.7-.2l1.9.9c.3.1.4.4.4.6 0 .6-.2 1.3-.6 1.7-.6.6-1.6.9-2.6.6-1.6-.5-3-1.4-4.2-2.6-1.1-1.1-2-2.5-2.4-4-.3-.9-.1-1.9.4-2.4Z"/></svg></span>
+</a>
 <nav class="mobile-bar" aria-label="Quick contact">
   <a href="tel:+254796042535"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
   <a href="https://wa.me/254796042535" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
-  <a class="mobile-bar-main" href="/admissions#enquire">Enquire</a>
+  <a class="mobile-bar-main" href="/apply">Apply</a>
 </nav>
 <script src="/assets/js/site.js" defer></script>
 </body>

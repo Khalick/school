@@ -11,10 +11,12 @@ site/          the website (plain HTML, CSS and JavaScript, no build step)
   learning.html  Learning (Cambridge programmes, subjects, exam calendar)
   kcse.html      KCSE private candidates
   admissions.html Admissions (steps, enquiry form, fees, FAQs)
+  apply.html     Online application form
   404.html       Page shown for broken links
   robots.txt
   assets/        css, js, img (crest, favicons, share image), photos
 brand/         the redrawn crest (SVG + PNG) and brand-guide.html
+google-apps-script/  the script behind the application form, and SETUP.md
 photos/        CREDITS.md: where each photo came from and what to replace it with
 vercel.json    Vercel settings (serves site/, clean URLs, headers)
 serve.ps1      local preview server
@@ -62,6 +64,7 @@ To add a custom domain (for example `olive.ac.ke`), open the project and go to *
 
 ## Before launch
 
+0. **Connect the application form.** Follow `google-apps-script/SETUP.md`, which takes about ten minutes with the school's Google account. Then paste the web app URL into `site/apply.html`. Until then, the form offers to send applications by email or WhatsApp.
 1. **Replace the photos.** The photos are licensed stand-ins from Pexels, not Olive students. `photos/CREDITS.md` lists every file and the sizes needed. Keep the same file names, and the site updates automatically.
 2. **Check the content** against how the school actually runs:
    - the subject list (`learning.html`)
