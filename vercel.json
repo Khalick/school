@@ -4,6 +4,15 @@
   "outputDirectory": "site",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.oliveinternationalschoolsnairobi.co.ke" }],
+      "destination": "https://oliveinternationalschoolsnairobi.co.ke/:path*",
+      "permanent": true
+    },
+    { "source": "/index", "destination": "/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

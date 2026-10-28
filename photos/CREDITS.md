@@ -7,6 +7,8 @@ Before the site goes live, replace each one with the school's own photo of a sim
 - `name.jpg`: about 1600–2400 px wide
 - `name-sm.jpg`: about 900 px wide
 
+The three home banner photos (`slide-…`) also need a middle size, `name-md.jpg`, 1600 px wide, so that laptops load a smaller file.
+
 | File | Used for | Replace with | Pexels source |
 |---|---|---|---|
 | slide-friends.jpg | Home banner slideshow, photo 1 | Students together at school, smiling | https://www.pexels.com/photo/6684600/ |

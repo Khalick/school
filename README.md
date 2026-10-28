@@ -60,7 +60,7 @@ git push -u origin main
    - add basic security headers
 3. Click **Deploy**. Every later push to `main` redeploys automatically.
 
-To add a custom domain (for example `olive.ac.ke`), open the project and go to **Settings → Domains**.
+The site's domain is **oliveinternationalschoolsnairobi.co.ke**. To connect it, open the project and go to **Settings → Domains**. Add both `oliveinternationalschoolsnairobi.co.ke` and `www.oliveinternationalschoolsnairobi.co.ke`, then set the DNS records Vercel shows at your `.co.ke` registrar. `vercel.json` already redirects `www` to the main address, so Google sees one site.
 
 ## Before launch
 
@@ -71,16 +71,40 @@ To add a custom domain (for example `olive.ac.ke`), open the project and go to *
    - the homeschool support list
    - the KCSE support and dates (`kcse.html`), checked against the current KNEC circular
    - the FAQ answers (`admissions.html`, `kcse.html`)
-3. **Add the address** when ready. Search the pages for `Nairobi, Kenya`.
-4. **Once the domain is known:**
-   - Change `content="/assets/img/og-image.png"` in each page's `<head>` to the full address, such as `https://olive.ac.ke/assets/img/og-image.png`. Without this, link previews on WhatsApp and Facebook won't show the image.
-   - Add a sitemap.
+3. **Add the address** when ready. Search the pages for `Nairobi, Kenya`, and add the street address to the `School` details in the `<head>` of `index.html` (`"address"`). Use exactly the same name, address and phone number everywhere: on the site, on Google and on social media.
+
+## Getting found on Google
+
+The site is already set up for search:
+- every page has its own title, description and canonical address
+- structured data tells Google that Olive is a school, and what it teaches; FAQs and breadcrumbs are marked up too
+- link previews on WhatsApp and Facebook show the share image
+- `sitemap.xml` and `robots.txt` are in place
+
+Search engines still need to be told the site exists, and the steps below matter more than anything on the page.
+
+1. **Google Search Console** (search.google.com/search-console). Add a **Domain** property for `oliveinternationalschoolsnairobi.co.ke`, and verify it with the TXT record Google gives you, added at your `.co.ke` registrar. Then:
+   - open **Sitemaps** and submit `sitemap.xml`
+   - use **URL inspection → Request indexing** for the home page
+2. **Google Business Profile** (business.google.com). This is what puts Olive on Google Maps and in "schools near me" results, and it is the biggest single step for local search.
+   - name: Olive International Schools
+   - category: School, plus International school if it is offered
+   - phone: +254 796 042 535
+   - website: https://oliveinternationalschoolsnairobi.co.ke
+   - hours, real photos, and the address (or a service area, if visits are by appointment only)
+   - ask happy parents to leave Google reviews, and reply to every review
+3. **Bing Webmaster Tools** (bing.com/webmasters). Use **Import from Google Search Console**. Bing also powers other search engines and AI assistants.
+4. **Link the site everywhere.** Put the address in the Instagram, Facebook and TikTok bios, in WhatsApp Business, in email signatures, and on printed material.
+5. **Earn links from Kenyan sites.** Examples: school and homeschooling directories, parents' groups, local news, and partners such as exam centres. A few genuine links do more than many low-quality ones.
+6. **Keep it fresh.** Update the key dates and fees when they change, and add new questions parents ask to the FAQs.
 
 ## Editing
 
 - The header and footer are repeated in every page: `index`, `about`, `learning`, `kcse`, `admissions` and `404`. If you change one, change them all.
 - Colours, type and spacing are set at the top of `site/assets/css/styles.css`.
 - The phone number and email are also set at the top of `site/assets/js/site.js`.
+- If you change a question or answer in an FAQ, change it in that page's structured data too, in the `<script type="application/ld+json">` block at the end of its `<head>`. Google expects the two to match.
+- If you add a page, give it its own `<title>`, description and `<link rel="canonical">`, and add it to `site/sitemap.xml`.
 
 ## Design: "Modern heritage"
 
