@@ -60,7 +60,7 @@ git push -u origin main
    - add basic security headers
 3. Click **Deploy**. Every later push to `main` redeploys automatically.
 
-The site's domain is **oliveinternationalschoolsnairobi.co.ke**. To connect it, open the project and go to **Settings → Domains**. Add both `oliveinternationalschoolsnairobi.co.ke` and `www.oliveinternationalschoolsnairobi.co.ke`, then set the DNS records Vercel shows at your `.co.ke` registrar. `vercel.json` already redirects `www` to the main address, so Google sees one site.
+The site's address is **https://www.oliveinternationalschoolsnairobi.co.ke**. In Vercel, under **Settings → Domains**, `www.oliveinternationalschoolsnairobi.co.ke` is the main domain, and `oliveinternationalschoolsnairobi.co.ke` redirects to it. Keep it that way: every canonical link, the sitemap and the structured data use the `www` address. Do not add a host redirect to `vercel.json`, because one pointing the other way would create a redirect loop.
 
 ## Before launch
 
@@ -90,7 +90,7 @@ Search engines still need to be told the site exists, and the steps below matter
    - name: Olive International Schools
    - category: School, plus International school if it is offered
    - phone: +254 796 042 535
-   - website: https://oliveinternationalschoolsnairobi.co.ke
+   - website: https://www.oliveinternationalschoolsnairobi.co.ke
    - hours, real photos, and the address (or a service area, if visits are by appointment only)
    - ask happy parents to leave Google reviews, and reply to every review
 3. **Bing Webmaster Tools** (bing.com/webmasters). Use **Import from Google Search Console**. Bing also powers other search engines and AI assistants.
